@@ -1,0 +1,66 @@
+<!--
+  Generated template for the CarparkPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+ 
+<ion-header>
+<ion-navbar color="darklight" hideBackButton>
+<ion-title> 
+ {{"Parking" | translate}}
+</ion-title>
+</ion-navbar>
+</ion-header>
+
+<ion-content    fullscreen class="bgcolor"> 
+<div  *ngFor="let item of parkinglist$ | async">
+ 
+ 
+       
+          <ion-card (click)="PA1(item.name)" class="while"    fullscreen>
+               <div class="boximg">
+        <img src="{{item.url}}" height="80px" weight="40px" />
+       </div>
+             
+            
+          <div class="namepark ">
+            <h1 >{{item.location}}</h1>
+       
+            </div>
+            <div class="statuspark green vertical-align-content" height="100%"  *ngIf="item.status == 1"><div><h1>{{"Free" | translate}}</h1><h1>{{item.notempty}}/{{item.slots}}</h1></div></div>
+             <div class="statuspark red vertical-align-content" height="100%"  *ngIf="item.status == 0"><div><h1>{{"Full" | translate}}</h1><h1>{{item.notempty}}/{{item.slots}}</h1></div></div>
+ 
+          </ion-card>
+ 
+        </div>
+ 
+   
+  <ion-fab right bottom *ngIf="userp.Email == 'admin@carpark.com'">
+     <button ion-fab mini color="danger" (click)="addpark()" ><ion-icon name="add"></ion-icon></button>
+    
+  </ion-fab>
+
+<!--
+<img src="../../assets/imgs/add.png" height="80px" weight="40px" /> 
+  <div class="content">
+    <div  *ngFor="let item of parkinglist$ | async">
+        <div class="box1 green" *ngIf="item.status == 1" (click)="PA1(item.name)">
+            <h2 align="center">ลานจอด<br>ว่าง:{{item.empty}}</h2>
+            <p align="center">{{item.name}}</p>
+           <p align="center">ตำแหน่ง:{{item.location}}</p>
+         </div>
+         <div class="box1 red" *ngIf="item.status == 0" (click)="PA1(item.name)">
+            <h2 align="center">ลานจอด<br>เต็ม</h2>
+            <p align="center">{{item.name}}</p>
+           <p align="center">ตำแหน่ง:{{item.location}}</p>
+         </div>
+    </div>
+    
+  </div>
+ 
+  <ion-footer>
+      <button class="bottom" ion-button clear full color="dark"(click)="back()">{{"Back" | translate}}</button>
+  </ion-footer>
+</ion-content>
+ -->

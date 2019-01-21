@@ -1,0 +1,50 @@
+<!-- 
+<ion-header>
+ <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+-->
+<ion-content class="background">
+	<h1>SMARTPARK</h1>
+		<ion-card>
+			<form>
+			<ion-card-header>
+			<label>{{"Login" | translate}}</label>
+			</ion-card-header>
+			<ion-card-content>
+				<ion-list no-line>
+					<ion-item>
+						<ion-label floating>{{"Email" | translate}}</ion-label>
+						<ion-input type="text" #Email></ion-input>
+					</ion-item>
+					<ion-item>
+						<ion-label floating>{{"Password" | translate}}</ion-label>
+						<ion-input type="password" #password></ion-input>
+					</ion-item>
+					<p>
+	<!-- <ion-checkbox color="dark" checked="true"></ion-checkbox>จำรหัสผ่าน <a> ลืมรหัสผ่าน ?</a></p> -->
+					<button ion-button  block outline  color="oreng"(click)="signin()">Sign In</button>
+					<p>OR</p>
+					<button ion-button block color="facebook"(click)="Fsiginin()">
+						<ion-icon name="logo-facebook" ></ion-icon> Sign In with facebook
+					</button>
+		 
+					<button ion-button block color="danger"(click)="Glogin()">
+						<ion-icon name="logo-google" ></ion-icon> Sign In with GOOGLE
+					</button>
+				</ion-list>
+			</ion-card-content>
+			</form>
+		</ion-card>
+		
+	</ion-content>
+	<ion-footer>
+		<button class="bottom" ion-button clear full color="light"(click)="regis()">{{"Register" | translate}}</button>
+	</ion-footer>
+	 
+	
+	

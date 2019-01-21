@@ -1,0 +1,114 @@
+<ion-header>
+<!--
+
+
+  <div class="header">
+    <div class="color-overlay">
+      <div class="day-number"><ion-datetime displayFormat="D" [(ngModel)]="myDate"></ion-datetime></div>
+      <div class="date-right">
+        <div class="day-name"><ion-datetime displayFormat="DDDD" [(ngModel)]="myDate"></ion-datetime></div>
+        <div class="month"><ion-datetime displayFormat="MMMM | YYYY" [(ngModel)]="myDate"></ion-datetime></div>
+      </div>
+    </div>
+    <div class="actionbutton" (click)="goback()">กลับ</div>
+  </div>
+
+
+   <li *ngIf="times.status == false">
+        <div class="bullet  pink"></div>
+        <div class="time">{{times.datetime}}</div>
+        <div class="desc">
+          <h1>นำรถออก</h1>
+          <h1>{{times.parkname}}</h1>
+        </div>
+      </li>
+-->
+<ion-navbar color="darklight" hideBackButton>
+<ion-title> 
+ {{"History" | translate}}
+</ion-title>
+</ion-navbar>
+</ion-header>
+
+<ion-content class="bgcolor"   scroll="false">
+<ion-item-group *ngFor="let group of timelist?.reverse() | GroupByPipe: 'datetime'">
+ <div style="min-width: 100%; text-align: center;"> 
+ <div  style="    margin: 3px auto;
+    width: 100px;
+    background-color: #d6d3d3;
+    border-radius: 20px;">
+        {{ group.key | date: 'dd MMM yy' }}
+
+        </div>
+    </div>
+    <div *ngFor="let times of timelist">
+    <div *ngIf="group.key == times.datetime">
+   <div *ngIf="times.uid == Povider.email">
+     
+      <div  *ngIf="times.status == false">
+        <ion-card  >
+        <div class="leftside   red w20" style="display:flex; align-items: center; text-align:center;"><div style="margin: auto;"> <!-- <h1> {{times.datetime | date: 'dd'}}  </h1>  <h2> {{times.datetime | date: 'MMM'}}</h2>  --> <h4>ช่อง</h4>   <h1>{{times.parkname}}</h1></div> </div>
+          
+         
+          <div class="leftside" style="display:flex; align-items: center; margin-left:5px;"> <div> <h1> TC1 RMUTL </h1></div> </div>
+            <div class="rightside " >
+                  <div class=" red inset" style="border-radius: 1px 1px 1px 10px;display: grid; align-items: center;min-height: 50%;text-align: center;"><ion-icon name="ios-arrow-back">  <ion-icon name="ios-car" ></ion-icon></ion-icon></div>   
+                  <div style=" min-height:50%; display:flex; align-items: center; padding-left:5px; " ><div> <h2>{{times.time  }}</h2> </div> </div>
+            </div>
+        </ion-card>
+        </div>
+   
+        <div  *ngIf="times.status == true">
+        <ion-card  >
+        <div class="leftside   green w20" style="display:flex; align-items: center;"><div style="margin: auto;"><h4>ช่อง</h4>   <h1>{{times.parkname}}</h1> </div> </div>
+          
+         
+          <div class="leftside" style="display:flex; align-items: center; margin-left:5px;"> <div>  <h1> TC1 RMUTL </h1></div> </div>
+            <div class="rightside " >
+                  <div class=" green inset " style=" border-radius: 1px 1px 1px 10px;display: grid; align-items: center;min-height: 50%;text-align: center;"> <ion-icon name="ios-car" > <ion-icon name="ios-arrow-forward-outline"> </ion-icon></ion-icon></div>   
+                  <div style=" min-height:50%; display:flex; align-items: center; padding-left:5px; " ><div> <h2>{{times.time  }}</h2> </div> </div>
+            </div>
+        </ion-card>
+        </div>
+             </div>
+  </div>  
+  </div>
+</ion-item-group>
+</ion-content>
+<!--
+
+
+  <div *ngFor="let times of timelist?.reverse() | groupBy 'times.datetime' ">
+   <div *ngIf="times.uid == Povider.email">
+      <div  *ngIf="times.status == false">
+        <ion-card  >
+        <div class="leftside   red w20" style="display:flex; align-items: center;"><div style="margin: auto;"> <h1> {{times.datetime | date: 'dd'}}  </h1>  <h2> {{times.datetime | date: 'MMM'}}</h2> </div> </div>
+          
+         
+          <div class="leftside" style="display:flex; align-items: center; margin-left:5px;"> <div><h1>{{times.parkname}}</h1> <h2> TC1 RMUTL </h2></div> </div>
+            <div class="rightside " >
+                  <div class=" red inset" style="border-radius: 1px 1px 1px 10px;display: grid; align-items: center;min-height: 50%;text-align: center;"><ion-icon name="ios-arrow-back">  <ion-icon name="ios-car" ></ion-icon></ion-icon></div>   
+                  <div style=" min-height:50%; display:flex; align-items: center; padding-left:5px; " ><div> <h2>{{times.time  }}</h2> </div> </div>
+            </div>
+        </ion-card>
+        </div>
+   
+        <div  *ngIf="times.status == true">
+        <ion-card  >
+        <div class="leftside   green w20" style="display:flex; align-items: center;"><div style="margin: auto;"> <h1> {{times.datetime | date: 'dd'}}  </h1>  <h2> {{times.datetime | date: 'MMM'}}</h2> </div> </div>
+          
+         
+          <div class="leftside" style="display:flex; align-items: center; margin-left:5px;"> <div><h1>{{times.parkname}}</h1> <h2> TC1 RMUTL </h2></div> </div>
+            <div class="rightside " >
+                  <div class=" green inset " style=" border-radius: 1px 1px 1px 10px;display: grid; align-items: center;min-height: 50%;text-align: center;"> <ion-icon name="ios-car" > <ion-icon name="ios-arrow-forward-outline"> </ion-icon></ion-icon></div>   
+                  <div style=" min-height:50%; display:flex; align-items: center; padding-left:5px; " ><div> <h2>{{times.time  }}</h2> </div> </div>
+            </div>
+        </ion-card>
+        </div>
+             </div>
+  </div>  
+<ion-footer>
+  <button class="bottom" ion-button clear full color="dark"(click)="back()">{{"Back" | translate}}</button>
+</ion-footer>
+
+-->

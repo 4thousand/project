@@ -1,0 +1,68 @@
+<ion-header>
+<!--
+
+
+  <div class="header">
+    <div class="color-overlay">
+      <div class="day-number"><ion-datetime displayFormat="D" [(ngModel)]="myDate"></ion-datetime></div>
+      <div class="date-right">
+        <div class="day-name"><ion-datetime displayFormat="DDDD" [(ngModel)]="myDate"></ion-datetime></div>
+        <div class="month"><ion-datetime displayFormat="MMMM | YYYY" [(ngModel)]="myDate"></ion-datetime></div>
+      </div>
+    </div>
+    <div class="actionbutton" (click)="goback()">กลับ</div>
+  </div>
+
+
+   <li *ngIf="times.status == false">
+        <div class="bullet  pink"></div>
+        <div class="time">{{times.datetime}}</div>
+        <div class="desc">
+          <h1>นำรถออก</h1>
+          <h1>{{times.parkname}}</h1>
+        </div>
+      </li>
+-->
+<ion-navbar color="darklight" hideBackButton>
+<ion-title> 
+ {{"History" | translate}}
+</ion-title>
+</ion-navbar>
+</ion-header>
+
+<ion-content class="bgcolor"   scroll="false">
+
+  <div class="timeline" *ngFor="let times of timelist?.reverse()">
+    <ul *ngIf="times.uid == Povider.email">
+      <li  *ngIf="times.status == false">
+         <div class="time"> {{times.datetime | date: 'dd'}} {{times.datetime | date: 'MMM'}} <br> {{times.datetime | date:'yyyy'}} </div>
+         <div class="bullet green" ></div>
+        <ion-card>
+         <div class="namepark w20">   <h3>{{times.parkname}}</h3>   </div>
+          <div class="namepark w30"><h4> TC1 RMUTL </h4> </div>
+            <div class="statusp green" height="100%" >
+                    {{times.time }} <br>  <ion-icon name="ios-arrow-back">  <ion-icon name="ios-car" ></ion-icon></ion-icon>
+            </div>
+        </ion-card>
+      </li>
+      <li  *ngIf="times.status == true">
+         <div class="time"> {{times.datetime | date: 'dd'}} {{times.datetime | date: 'MMM'}} <br> {{times.datetime | date:'yyyy'}} </div>
+         <div class="bullet green" ></div>
+        <ion-card>
+         <div class="namepark w20" >   <h3>{{times.parkname}}</h3>   </div>
+          <div class="namepark  w30">  <h4> TC1 RMUTL<!-- {{"TakeOFF" | translate}}--> </h4> </div>
+            <div class="statusp red" >
+                    {{times.time }} <br>  <h1> <ion-icon name="ios-car"></ion-icon> <ion-icon name="ios-arrow-forward-outline"></ion-icon></h1>
+            </div>
+        </ion-card>
+      </li>
+     
+    </ul>
+  </div>  
+</ion-content>
+ 
+
+<ion-footer>
+  <button class="bottom" ion-button clear full color="dark"(click)="back()">{{"Back" | translate}}</button>
+</ion-footer>
+ 

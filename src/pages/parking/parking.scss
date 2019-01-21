@@ -1,0 +1,130 @@
+page-parking {
+  header,
+  footer {
+     padding: 3em;
+     margin-left: 5px;
+     margin-right: 5px;
+     // Add a flex rule for browsers not supporting the
+     // CSS Grid Layout spec
+     flex: 0 1 100%;
+     // Define the start and end values for the grid column
+     grid-column: 1 / -1;
+     text-align: center;
+     background-color: rgba(175, 186, 202, 1);
+  }
+  
+  .content{
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      .box1 {
+          border-radius: 5px;
+          padding: 1em;
+          width: 49%;
+          height: 40%;
+          float: left;
+          margin: 1px;
+          // Add a flex rule for browsers not supporting the
+          // CSS Grid Layout spec
+       }
+       
+  }
+  // Define the style rules for each panel within the grid
+  // container
+  
+  
+  
+  // We need to ensure that browsers that fall back to the
+  // Flexbox rules add a bottom margin of 10 pixels to all
+  // direct child elements within the grid container (to
+  // emulate the grid gap)
+  .wrapper > * {
+    margin-bottom: 10px;
+  }
+  
+  
+  // Use a feature query to determine if the browser supports
+  // a specific CSS rule - in this case the display: grid property
+  
+  // If the rule is supported then we remove the flexbox fallback
+  // rule of adding 10 pixels to the bottom margin of each child
+  // decendent of the grid container (to emulate the grid gap)
+  @supports (display: grid) {
+    .wrapper > * {
+      margin: 0;
+    }
+  }
+  
+  
+  
+  // Add the necessary classes for styling the
+  // background colours of each panel in the
+  // project UI
+  .red {
+      background-color: rgba(220, 83, 81, 1);
+  }
+  
+  .green {
+      background-color: rgba(187, 225, 123, 1);
+  }
+  
+  .blue {
+      background-color: rgba(131, 150, 225, 1);
+  }
+  
+  .purple {
+      background-color: rgba(155, 121, 170, 1);
+  }
+  
+  .yellow {
+      background-color: rgba(235, 229, 39, 1);
+  }
+  
+  .violet {
+      background-color: rgba(213, 118, 211, 1);
+  }
+  
+  .orange {
+      background-color: rgba(213, 151, 46, 1);
+  }
+  
+  .turquoise {
+      background-color: rgba(105, 203, 217, 1);
+  } .gmd-2 {
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -ms-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -o-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  } 
+  [cards] {
+   
+    .grid-full ion-col {
+        flex: 0 0 50%;
+        max-width: 100%;
+        padding: 5px 0;
+    }
+    .row {
+        padding: 0 12px;
+    }
+    .col {
+        padding: 5px 0;
+    }
+    .card {
+        margin: 0 5px;
+        width: calc(100% - 10px);
+        padding: 14px;
+        height: 100px;
+        border-radius: 3px;
+        h1 {
+            font-weight:bold;
+            font-size: 3rem;
+            color: #000;
+        }
+        p {
+            font-weight: 100;
+            font-size: 1.5rem;
+        }
+    }
+}
+}

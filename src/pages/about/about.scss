@@ -1,0 +1,52 @@
+page-about {
+    html{
+        margin: 0 0;
+    }
+   
+    .headers
+	{
+ 
+		height: 100px;
+		margin: 0 auto;
+        text-align: center;
+        background-color:rgba(218, 218, 218, 0.842);
+    
+        ion-img{
+         
+            margin-top: 10px;
+           
+       
+        }
+        .boxprofile{
+            float: left;
+            height:100px;
+            padding: 10px;
+        }
+        .logoimg{
+            margin: 0 auto;
+            height:100px;
+            width: 100px;
+            background-color: rgb(182, 182, 182);
+            float: left;
+            
+            }
+    }
+    .content{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        text-align: left;
+       
+         
+    }
+	
+	
+    ion-item {
+     padding: 10px;
+     border-bottom: 1px rgb(143, 139, 139) outset;
+        // Add a flex rule for browsers not supporting the
+        // CSS Grid Layout spec
+     }
+
+
+}

@@ -1,0 +1,113 @@
+<!--
+  Generated template for the ParkingPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+<!--ion-content >
+    <!<ion-list>
+        <ion-item *ngFor="let item of items | async">
+            <ng-container *ngIf="item.A1 == 1; else newDeb" >
+       
+                    <div class="carbox">A</div>
+                
+            </ng-container>
+            <ng-template #newDeb>
+  
+                    <div class="carboxr">B</div>
+           
+            </ng-template> 
+
+            <ion-list>
+                <ion-item *ngFor="let item of items | async">      
+                 <div *ngIf=" item.A1 == 1" class="carbox">A</div> 
+                 <div *ngIf=" item.A1 == 0" class="carboxr">A</div> 
+     //           </ion-item>
+              </ion-list>
+       
+    </ion-list>-->
+<!--</ion-content>-->
+
+<ion-header>
+<ion-navbar color="darklight" hideBackButton>
+<ion-title> 
+  {{"ParkingTC-1" | translate}}
+</ion-title>
+</ion-navbar>
+</ion-header>
+
+
+<ion-content fullscreen>
+  <div class="content">
+  <div cards >
+
+    <div class="grid-full gmd-2"  >
+      <ion-row >
+        <ion-col   *ngFor="let item of parkinglist$ | async" style="text-align:center">
+         <div *ngIf="item.status == 0">
+          <ion-card class="blue gmd-2"  *ngIf="item.standby == profile.Email" (click)="PA1(item.status,item.standby,item.name,item.key)">
+            <h1 orange>{{item.name}}</h1>
+               <h1 align="center"><ion-icon name="md-contact"></ion-icon> </h1>
+          </ion-card>
+          <ion-card  class="red gmd-2" *ngIf="item.standby != profile.Email" (click)="PA1(item.status,item.standby,item.name,item.key)">
+            <h1 orange>{{item.name}}</h1>
+               <h1 align="center"><ion-icon name="ios-car"> </ion-icon></h1>
+          </ion-card>
+          </div>
+          <div *ngIf="item.status == 1">
+           <ion-card (click)="PA1(item.status,item.standby,item.name,item.key)" class="green gmd-2">
+            <h1 orange>{{item.name}}</h1>
+               <h1 align="center">&nbsp;</h1>
+          </ion-card>
+          </div>
+        </ion-col>
+ 
+  </ion-row>
+    </div>
+
+   
+  <button class="bottom gmd-2" style="margin-top:30px;" ion-button clear  full  color="dark" (click)="getimg()">รูปลานจอด</button>
+</div>
+   
+ <!--
+
+
+
+    <div  *ngFor="let item of parkinglist$ | async">
+    
+        <div *ngIf="item.status == 0">
+                
+                <div class="box1 blue" *ngIf="item.standby == profile.Email" (click)="PA1(item.status,item.standby,item.name,item.key)">
+                    <h2 align="center"> {{item.name}}</h2>
+                    <h2 align="center"><ion-icon name="md-contact"> </ion-icon></h2>
+                </div>
+                <div class="box1 red" *ngIf="item.standby!=profile.Email" (click)="PA1(item.status,item.standby,item.name,item.key)">
+                        <h2 align="center">{{item.name}}</h2>
+                        <h2 align="center"><ion-icon name="ios-car"> </ion-icon></h2>
+                    </div>
+         </div>
+         <div class="box1 green" *ngIf="item.status == 1" (click)="PA1(item.status,item.standby,item.name,item.key)">
+             
+            <h2 align="center">{{item.name}}</h2>
+            <h2 align="center"><ion-icon name="ios-car-outline"> </ion-icon> </h2>
+            
+         </div>
+    </div>
+   -->  
+  </div> 
+
+
+</ion-content>
+
+  <ion-fab right>
+     <button ion-fab mini color="danger" (click)="nvigate()"><ion-icon name="md-navigate"></ion-icon></button>
+    
+  </ion-fab>
+ 
+<ion-footer>
+ 
+
+  <button class="bottom" ion-button clear full color="dark"(click)="back()">{{"Back" | translate}}</button>
+</ion-footer>

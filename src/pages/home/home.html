@@ -1,0 +1,56 @@
+
+<ion-header><!--<div class="logoheader"></div>
+ 
+		<ion-slides  >
+				<ion-slide>
+						{{userp.Email}}
+				</ion-slide>
+				<ion-slide>
+					<h1> </h1>
+				</ion-slide>
+				<ion-slide>
+					<h1>Slide 3</h1>
+				</ion-slide>
+			</ion-slides>
+		
+		<div class="header">
+			<div class="color-overlay">
+			  <div class="day-number"><ion-datetime displayFormat="D" [(ngModel)]="myDate"></ion-datetime></div>
+			  <div class="date-right">
+				<div class="day-name"><ion-datetime displayFormat="DDDD" [(ngModel)]="myDate"></ion-datetime></div>
+				<div class="month"><ion-datetime displayFormat="MMMM | YYYY" [(ngModel)]="myDate"></ion-datetime></div>
+			  </div>
+			</div>
+ 
+	</div>
+	-->
+ 
+<ion-navbar color="darklight" hideBackButton>
+<ion-title> 
+{{"Home" | translate}}
+</ion-title>
+</ion-navbar>
+ 
+</ion-header>
+
+<ion-content text-center class="icons-basic-page" padding>
+		<div [ngSwitch]="pet" style="margin-top:100px;">
+				<ion-grid *ngSwitchCase="'puppies'">
+						<ion-row class="row">
+								<ion-col class="col col-lef"><button class="btn-h" (click)="GoPark()"><ion-icon name="ios-car"></ion-icon><br>{{"Parking" | translate}}</button></ion-col>
+								<ion-col class="col"><button class="btn-h" (click)="goMycarpage()" > <ion-icon name="ios-car-outline" ></ion-icon><br>{{"Mycar" | translate}}</button></ion-col>
+								<ion-col class="col col-ri"><button class="btn-h" (click)="goNavigatePage()"> <ion-icon name="navigate"></ion-icon><br>{{"Navigator" | translate}}</button></ion-col>
+						</ion-row>
+						<ion-row class="row">
+								<ion-col class="col col-lef"><button class="btn-h" (click)="gTimeline()"><ion-icon name="clipboard" md="md-clipboard" color="bright"></ion-icon><br>{{"History" | translate}}</button></ion-col>
+								<ion-col class="col"><button class="btn-h" (click)="gosetting()" > <ion-icon  name="md-settings" > </ion-icon><br>{{"Setting" | translate}}</button></ion-col>
+								<ion-col class="col col-ri"><button class="btn-h" (click)="gabout()"> <ion-icon  name="md-contact" ></ion-icon><br>{{"About" | translate}}</button></ion-col>
+						</ion-row>
+				</ion-grid> 
+		</div>
+	</ion-content>
+<ion-footer>
+	<button  ion-button clear full color="light" (click)="Signout()">{{"SignOut" | translate}}</button>
+</ion-footer>
+ 
+
