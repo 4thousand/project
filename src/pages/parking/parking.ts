@@ -4,7 +4,7 @@ import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angu
 //import { FirebaseObjectObservable, FirebaseListObservable } from 'angularfire2/database-deprecated';
 //import { AngularFireDatabase, FirebaseListObservable } from 'AngularFire/database';
 
-import { Timeline, Parkinglist, Profileuser } from '../../model/parking/parking.model';
+import { Timeline, Parkinglist, Profileuser, stand } from '../../model/parking/parking.model';
 
 //import { HomePage } from '../home/home';
 import { AngularFireAuth } from 'angularfire2/auth';
@@ -22,7 +22,9 @@ import { LocalNotifications } from '@ionic-native/local-notifications';
 import { Storage } from '@ionic/storage';
 import { GetpicPage } from '../getpic/getpic';
 import { PhotoViewer } from '@ionic-native/photo-viewer';
+import * as firebase from 'firebase';
 /**
+ * 
  * Generated class for the ParkingPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
@@ -44,6 +46,10 @@ export class ParkingPage {
     datetime: "",
     time: "",
   };
+  standin: stand = {
+    name: "",
+    email: ""
+  }
   pake;
   userP: Profileuser = {
     key: "",
@@ -58,6 +64,7 @@ export class ParkingPage {
     standby: "",
     status: true,
     local: "",
+
   };
   profile: Profileuser = {
     uid: "",
@@ -67,6 +74,7 @@ export class ParkingPage {
     DisplayName: "",
     status,
   }
+  standby: "";
   datetime;
   itemsRef: AngularFireList<any>;
   parkRef: AngularFireList<any>;
@@ -88,6 +96,7 @@ export class ParkingPage {
       });
 
       this.itemsRefs = db.list<Parkinglist>('/Parking-list/PA/');
+
       //this.items = this.itemsRefs.snapshotChanges().map(changes => {
       // return changes.map(c => ({ key: c.payload.key, ...c.payload.val() }));
       // });
@@ -97,7 +106,33 @@ export class ParkingPage {
 
   }
   mycar() {
-    this.homeaut.authState.take(1).subscribe(data => {
+    this.homeaut.authState.subscribe(data => {
+      if (data) {
+        // const queryss = firebase.database().ref('notification').orderByChild('email').equalTo(data.email);
+        // queryss.once('value', (snapshots) => {
+        //   if (snapshots.val()) {
+        //     snapshots.forEach((childSnapshot) => {
+        //       var keys = childSnapshot.key;
+        //       var itemdata = childSnapshot.val();
+        //       this.standby = itemdata.name;
+        //       return true
+        //     })
+        //   }
+        // })
+        this.db.list<stand>(`/notification/`).snapshotChanges().subscribe((res1) => {
+          let i = 0, parking = 0;
+          res1.forEach(park2 => {
+            console.log(park2)
+            let standpark = park2.payload.val();
+            let standparkkey = park2.key;
+            if (standpark.email == data.email) {
+              this.standby = standpark.name;
+            } else {
+              this.standby = null;
+            }
+          })
+        });
+      }
       this.profile.Email = data.email;
       console.log(this.profile.Email);
       this.profile.DisplayName = data.displayName;
@@ -141,91 +176,171 @@ export class ParkingPage {
 
       let alert = this.alertCtrl.create({
         title: '',
-        subTitle: 'ท่านต้องการที่จะเข้าจอดหรือเข้าสู่ระบบนำทางไปยังลานจอด',
+        subTitle: 'ท่านต้องการที่จะเปิดการแจ้งเตือนเมื่อมีรถเข้า-ออก',
         buttons: [{
-          text: "เข้าจอด",
-          role: "เข้าจอด",
+          text: "รับการแจ้งเตือน",
+          role: "รับการแจ้งเตือน",
           handler: datae => {
-            if (PA1 == true) {
-              this.itemsRefs.update(key, { standby: "none" });
+            if (PA1 == false) {
+
+
+              const querypark = firebase.database().ref('Parking-list/PA/');
+              const query = firebase.database().ref('notification').orderByChild('email').equalTo(data.email);
+              query.once('value', (snapshot) => {
+                if (snapshot.val()) {
+                  snapshot.forEach((childSnapshot) => {
+                    var keys = childSnapshot.key;
+                    var itemdata = childSnapshot.val();
+                    if (itemdata.name == name) {
+                      this.db.list(`/notification/`).remove(keys);
+                      // let alert1 = this.alertCtrl.create({
+                      //   title: '',
+                      //   subTitle: 'ท่านได้กดแจ้งเตือนที่ช่องนี้แล้วท่านต้องการยกเลิกการแจ้งเตือนหรือไม่',
+                      //   buttons: [{
+                      //     text: "ยกเลิกการแจ้งเตือน",
+                      //     role: "ยกเลิกการแจ้งเตือน",
+                      //     handler: dataes => {
+                      //       this.db.list(`/notification/`).remove(keys);
+
+                      //     }
+                      //   }, {
+                      //     text: "ยกเลิก",
+                      //     role: "ยกเลิก",
+                      //     handler: dataes => {
+                      //     }
+                      //   }]
+                      // });
+                      // alert1.present();
+                    } else {
+                      let alert2 = this.alertCtrl.create({
+                        title: '',
+                        subTitle: 'ท่านได้กดแจ้งเตือนที่ช่อง' + itemdata.name + 'แล้วท่านต้องการเปลี่ยนช่องรับการแจ้งเตือนหรือไม่',
+                        buttons: [{
+                          text: "เปลี่ยนช่องรับการแจ้งเตือน",
+                          role: "เปลี่ยนช่องรับการแจ้งเตือน",
+                          handler: dataea => {
+                            this.db.list(`/notification/`).remove(keys);
+                            this.standin.email = data.email;
+                            this.standin.name = name;
+                            this.db.list<stand>(`/notification/`).push(this.standin);
+                            querypark.orderByChild('status').equalTo(false).once('value', (snapshots) => {
+                              if (snapshots.val()) {
+                                this.time.datetime = this.formateDate();
+                                this.time.time = this.formatime();
+                                this.time.uid = data.email;
+
+
+                                this.time.parkname = name;
+                                this.time.status = false;
+
+
+                                this.firebaseservice.addtime(this.time);
+                                this.Storage.get('Notification').then((datanoti) => {
+                                  if (datanoti == true) {
+                                    this.localNotifications.schedule({
+                                      title: 'Notifications',
+                                      text: 'ช่องจอด' + name + 'ที่ท่านรับการแจ้งเตือนมีการเข้าจอด\nเวลา :' + this.time.datetime,
+
+                                    });
+                                  }
+
+                                });
+                              }
+                            });
+
+
+                          }
+                        }, {
+                          text: "ยกเลิก",
+                          role: "ยกเลิก",
+                          handler: dataea => {
+                          }
+                        }]
+                      });
+                      alert2.present();
+                    }
+
+
+                    console.log(keys, itemdata.email)
+                    return true
+                  })
+
+                } else {
+                  this.standin.email = data.email;
+                  this.standin.name = name;
+                  this.db.list<stand>(`/notification/`).push(this.standin);
+                  querypark.orderByChild('status').equalTo(false).once('value', (snapshots) => {
+                    if (snapshots.val()) {
+                      this.time.datetime = this.formateDate();
+                      this.time.time = this.formatime();
+                      this.time.uid = data.email;
+
+
+                      this.time.parkname = name;
+                      this.time.status = false;
+
+
+                      this.firebaseservice.addtime(this.time);
+                      this.Storage.get('Notification').then((datanoti) => {
+                        if (datanoti == true) {
+                          this.localNotifications.schedule({
+                            title: 'Notifications',
+                            text: 'ช่องจอด' + name + 'ที่ท่านรับการแจ้งเตือนมีการเข้าจอด\nเวลา :' + this.time.datetime,
+
+                          });
+                        }
+
+                      });
+                    }
+                  });
+                }
+                //contains all users that has apply as true
+              })
+
+
+            } else {
               let alert = this.alertCtrl.create({
                 title: '',
                 subTitle: 'กรุณารอจนกว่าช่องจอดของท่านจะเป็นสีแดง',
                 buttons: ['ok']
               });
               alert.present();
-            } else {
-              if (standby == "none") {
-                this.db.list<Parkinglist>(`/Parking-list/PA/`).snapshotChanges().take(1).subscribe((res) => {
-                  res.forEach(park => {
-                    let parks = park.payload.val();
-                    let parkkey = park.key;
-                    if (parks.standby == data.email) {
-                      this.itemsRefs.update(parkkey, { standby: "none" });
-                    }
-                  })
-                });
-
-                this.park.status = false;
-                this.time.uid = data.email;
-                this.time.parkname = name;
-                this.time.status = false;
-                this.time.datetime = this.formateDate();
-                this.time.time = this.formatime();
-                this.itemsRefs.update(key, { standby: data.email });
-                this.firebaseservice.addtime(this.time);
-                this.Storage.get('Notification').then((datanoti) => {
-                  if (datanoti == true) {
-                    this.localNotifications.schedule({
-                      title: 'Notifications',
-                      text: 'ท่านได้ทำการเข้าจอดณช่อง' + name + 'เวลา :' + this.time.datetime,
-
-                    });
-                  }
-
-                });
-              }
-              else {
-                let alert = this.alertCtrl.create({
-                  title: '',
-                  subTitle: 'ท่านได้เข้าจอดแล้วหรือมีท่านอื่นจอดในช่องนั้นอยู่',
-                  buttons: ['ok']
-                });
-                alert.present();
-              }
-
             }
           }
+
+
+
+
         }, {
-          text: "นำทาง",
-          role: "นำทาง",
+          text: "ยกเลิก",
+          role: "ยกเลิก",
           handler: datae => {
-            this.Platforms.ready().then(() => {
+            // this.Platforms.ready().then(() => {
 
-              this.Lanch.navigate('18.81147,98.9542387')
-                .then(
-                  success => {
-                    let alert = this.alertCtrl.create({
-                      title: 'Launched',
-                      subTitle: 'Launched navigator',
-                      buttons: ['ok']
-                    });
-                    alert.present();
+            //   this.Lanch.navigate('18.81147,98.9542387')
+            //     .then(
+            //       success => {
+            //         let alert = this.alertCtrl.create({
+            //           title: 'Launched',
+            //           subTitle: 'Launched navigator',
+            //           buttons: ['ok']
+            //         });
+            //         alert.present();
 
-                  },
-                  error => {
-                    let alert = this.alertCtrl.create({
-                      title: 'Error',
-                      subTitle: 'Launched navigator' + error,
-                      buttons: ['ok']
-                    });
-                    alert.present();
+            //       },
+            //       error => {
+            //         let alert = this.alertCtrl.create({
+            //           title: 'Error',
+            //           subTitle: 'Launched navigator' + error,
+            //           buttons: ['ok']
+            //         });
+            //         alert.present();
 
-                  }
-                );
+            //       }
+            //     );
 
 
-            });
+            // });
 
           }
         }]
@@ -305,7 +420,9 @@ export class ParkingPage {
 
     var hours = dates.getHours().toString();
     var min = dates.getMinutes().toString();
-
+    if (min.length == 1) {
+      min = "0" + min;
+    }
     var timeer = `${hours}:${min}`;
     return timeer;
   }

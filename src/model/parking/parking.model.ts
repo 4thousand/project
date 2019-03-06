@@ -4,12 +4,18 @@ export interface Parking {
   name: String;
   status: boolean;
 }
+export interface stand {
+  key?: string;
+  name: string;
+  email: string;
+}
 export interface Parkinglist {
   key?: string;
   name: string;
   standby: string;
   status: boolean;
   local: string;
+
 }
 export interface application {
   version: string;

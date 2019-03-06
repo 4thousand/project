@@ -61,7 +61,8 @@ page-parking {
   // background colours of each panel in the
   // project UI
   .red {
-      background-color: rgba(220, 83, 81, 1);
+     // background-color: rgba(220, 83, 81, 1);
+     background-color:#e67371;
   }
   
   .green {
@@ -71,7 +72,9 @@ page-parking {
   .blue {
       background-color: rgba(131, 150, 225, 1);
   }
-  
+  .gray{
+    background-color: #cec6c6;
+}
   .purple {
       background-color: rgba(155, 121, 170, 1);
   }
@@ -87,7 +90,31 @@ page-parking {
   .orange {
       background-color: rgba(213, 151, 46, 1);
   }
+  .reds{
+      background-color: rgb(214, 149, 148);
+  }
+  .reded{
+      background-color: #ff0703;
+  }
+  .card__date {
   
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+ border-bottom-left-radius: 10px;
+    background-color: #000;
+color:#FFf;
+    font-weight: bold;
+    opacity: 1.7;
+    transition: opacity 0.25s ease-in-out;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
   .turquoise {
       background-color: rgba(105, 203, 217, 1);
   } .gmd-2 {
