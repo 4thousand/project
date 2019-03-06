@@ -1,0 +1,490 @@
+-- Merging decision tree log ---
+provider#de.appplant.cordova.plugin.notification.util.AssetProvider
+INJECTED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:12:9-14:20
+	android:grantUriPermissions
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:12:92-126
+	android:authorities
+		INJECTED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:12:19-66
+	android:exported
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:12:67-91
+	android:name
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:12:127-200
+provider#org.apache.cordova.camera.FileProvider
+INJECTED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:23:9-25:20
+	android:grantUriPermissions
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:23:92-126
+	android:authorities
+		INJECTED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:23:19-66
+	android:exported
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:23:67-91
+	android:name
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:23:127-180
+manifest
+ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:2:1-37:12
+MERGED from [me.leolin:ShortcutBadger:1.1.21] C:\Users\white\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.21.aar\e553283b05237db3987b000855a009cf\AndroidManifest.xml:2:1-52:12
+MERGED from [com.commit451:PhotoView:1.2.4] C:\Users\white\.gradle\caches\transforms-1\files-1.1\PhotoView-1.2.4.aar\2b320900e3b7ec901af652e5ab8e8ae8\AndroidManifest.xml:2:1-12:12
+MERGED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\07181e2975e36100ffb3f9dd78542e32\AndroidManifest.xml:17:1-39:12
+MERGED from [com.google.android.gms:play-services-identity:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-identity-11.8.0.aar\8ac2f69ff5494f87b057717c87f07b3a\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-11.8.0.aar\8089b444ac3a3f1ed0272beac449f757\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-auth-base:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-11.8.0.aar\07eeffb3382ae60a363f1ce8cdc6b423\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\50b953f633c0c665b24fbe2e2b2ffd36\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\9a6379cad9e2ec91894b9b75aeb0d213\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\ec108dc3fea16d065040538f3c9f53a1\AndroidManifest.xml:17:1-28:12
+MERGED from [com.facebook.android:facebook-android-sdk:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.40.0.aar\2b54316bf3fb14710698b40a13bf6863\AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-login:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-login-4.40.0.aar\3674f8b4b24e9fedfc98e4ae17595615\AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-share:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-share-4.40.0.aar\5c1e192534502b5480f49578b357677e\AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-common:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-common-4.40.0.aar\cf48009795e0593345527fec0beb63a4\AndroidManifest.xml:21:1-37:12
+MERGED from [com.android.support:support-v4:27.0.2] C:\Users\white\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.2.aar\3c4c6618ae3ba3571956966099dd2b8a\AndroidManifest.xml:17:1-22:12
+MERGED from [:CordovaLib] E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\CordovaLib\build\intermediates\manifests\full\debug\AndroidManifest.xml:20:1-27:12
+MERGED from [com.google.android.gms:play-services-identity-license:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-identity-license-11.8.0.aar\ec789d8fe61b3f35883e3efc1cae4f77\AndroidManifest.xml:2:1-6:12
+MERGED from [com.facebook.android:facebook-places:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-places-4.40.0.aar\e8ae3ce6a4dcc1cadcfb357462282eef\AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-applinks:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-applinks-4.40.0.aar\5978b18d3bbbe160237a94515ee3241d\AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-messenger:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-messenger-4.40.0.aar\a5ee53aa953da8730b7ca45dd2c91cfe\AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-marketing:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-marketing-4.40.0.aar\773bf6193878876caeb10d831483b7ff\AndroidManifest.xml:21:1-35:12
+MERGED from [com.facebook.android:facebook-core:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-core-4.40.0.aar\8c53919faf245ef9d461bcdf5467da12\AndroidManifest.xml:21:1-53:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-license-11.8.0.aar\b7719aee045c0477f07d3101f5442096\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-license-11.8.0.aar\926202c891743484a448b9ba454f451a\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\ad4afc7745895b3a049f2226eca90696\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\8132e24a29648defdd3d6e1e01862af5\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\e7c912923f3f256b48843abc51b60415\AndroidManifest.xml:2:1-6:12
+MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\white\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\2c88fd94001510517cd1c6395fbaf1a3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\white\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\60cca5d4d611fdb6908d6fe8c655658b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\white\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\e405c7b3ea9cf55824870f76a244a662\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:27.0.2] C:\Users\white\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.0.2.aar\3648813320fe4bd169732fa3f752ac82\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customtabs:27.0.2] C:\Users\white\.gradle\caches\transforms-1\files-1.1\customtabs-27.0.2.aar\dce3a4d96670dc03e1a86cbc0f8598a8\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\white\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.2.aar\413a2ac7216119cd2a3dcb47731bdfa1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\white\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.2.aar\7336a1c7d5399459583a99d92aa938a8\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\white\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\b1e877428b736e35784fad4077a3ddce\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\white\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.2.aar\09dfdc0eb97b9fba0effdb76d03b8a85\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.0.2] C:\Users\white\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\b424624a37e90b5d7bb7e6e450520fe0\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\white\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\d903e2cf4d3917c888e918a7ec6104d4\AndroidManifest.xml:17:1-24:12
+INJECTED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:2:1-37:12
+	package
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:2:98-128
+		INJECTED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:2:70-97
+		INJECTED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml
+	android:hardwareAccelerated
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:2:11-45
+	xmlns:android
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:2:129-187
+	android:versionCode
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:2:46-69
+		INJECTED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml
+supports-screens
+ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:3:5-191
+	android:largeScreens
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:3:49-76
+	android:smallScreens
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:3:132-159
+	android:normalScreens
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:3:77-105
+	android:xlargeScreens
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:3:160-188
+	android:resizeable
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:3:106-131
+	android:anyDensity
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:3:23-48
+uses-permission#android.permission.INTERNET
+ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:4:22-64
+application
+ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:5:5-26:19
+MERGED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\07181e2975e36100ffb3f9dd78542e32\AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\07181e2975e36100ffb3f9dd78542e32\AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.android.gms:play-services-identity:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-identity-11.8.0.aar\8ac2f69ff5494f87b057717c87f07b3a\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-identity:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-identity-11.8.0.aar\8ac2f69ff5494f87b057717c87f07b3a\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\50b953f633c0c665b24fbe2e2b2ffd36\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\50b953f633c0c665b24fbe2e2b2ffd36\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\9a6379cad9e2ec91894b9b75aeb0d213\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\9a6379cad9e2ec91894b9b75aeb0d213\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\ec108dc3fea16d065040538f3c9f53a1\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\ec108dc3fea16d065040538f3c9f53a1\AndroidManifest.xml:22:5-26:19
+MERGED from [com.facebook.android:facebook-android-sdk:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.40.0.aar\2b54316bf3fb14710698b40a13bf6863\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-android-sdk:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.40.0.aar\2b54316bf3fb14710698b40a13bf6863\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-login:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-login-4.40.0.aar\3674f8b4b24e9fedfc98e4ae17595615\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-login:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-login-4.40.0.aar\3674f8b4b24e9fedfc98e4ae17595615\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-share:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-share-4.40.0.aar\5c1e192534502b5480f49578b357677e\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-share:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-share-4.40.0.aar\5c1e192534502b5480f49578b357677e\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-common:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-common-4.40.0.aar\cf48009795e0593345527fec0beb63a4\AndroidManifest.xml:28:5-35:19
+MERGED from [com.facebook.android:facebook-common:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-common-4.40.0.aar\cf48009795e0593345527fec0beb63a4\AndroidManifest.xml:28:5-35:19
+MERGED from [com.google.android.gms:play-services-identity-license:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-identity-license-11.8.0.aar\ec789d8fe61b3f35883e3efc1cae4f77\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-identity-license:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-identity-license-11.8.0.aar\ec789d8fe61b3f35883e3efc1cae4f77\AndroidManifest.xml:5:5-20
+MERGED from [com.facebook.android:facebook-places:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-places-4.40.0.aar\e8ae3ce6a4dcc1cadcfb357462282eef\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-places:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-places-4.40.0.aar\e8ae3ce6a4dcc1cadcfb357462282eef\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-applinks:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-applinks-4.40.0.aar\5978b18d3bbbe160237a94515ee3241d\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-applinks:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-applinks-4.40.0.aar\5978b18d3bbbe160237a94515ee3241d\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-messenger:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-messenger-4.40.0.aar\a5ee53aa953da8730b7ca45dd2c91cfe\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-messenger:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-messenger-4.40.0.aar\a5ee53aa953da8730b7ca45dd2c91cfe\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-marketing:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-marketing-4.40.0.aar\773bf6193878876caeb10d831483b7ff\AndroidManifest.xml:28:5-33:19
+MERGED from [com.facebook.android:facebook-marketing:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-marketing-4.40.0.aar\773bf6193878876caeb10d831483b7ff\AndroidManifest.xml:28:5-33:19
+MERGED from [com.facebook.android:facebook-core:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-core-4.40.0.aar\8c53919faf245ef9d461bcdf5467da12\AndroidManifest.xml:28:5-51:19
+MERGED from [com.facebook.android:facebook-core:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-core-4.40.0.aar\8c53919faf245ef9d461bcdf5467da12\AndroidManifest.xml:28:5-51:19
+MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-license-11.8.0.aar\b7719aee045c0477f07d3101f5442096\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-license-11.8.0.aar\b7719aee045c0477f07d3101f5442096\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-license-11.8.0.aar\926202c891743484a448b9ba454f451a\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-license-11.8.0.aar\926202c891743484a448b9ba454f451a\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\ad4afc7745895b3a049f2226eca90696\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\ad4afc7745895b3a049f2226eca90696\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\8132e24a29648defdd3d6e1e01862af5\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\8132e24a29648defdd3d6e1e01862af5\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\e7c912923f3f256b48843abc51b60415\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\e7c912923f3f256b48843abc51b60415\AndroidManifest.xml:5:5-20
+	android:supportsRtl
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:5:114-140
+	android:label
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:5:81-113
+	android:hardwareAccelerated
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:5:18-52
+	android:icon
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:5:53-80
+activity#com.carpark.applogin.MainActivity
+ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:6:9-11:20
+	android:screenOrientation
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:6:199-235
+	android:label
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:6:97-134
+	android:launchMode
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:6:135-170
+	android:windowSoftInputMode
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:6:299-341
+	android:configChanges
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:6:19-96
+	android:theme
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:6:236-298
+	android:name
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:6:171-198
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:7:13-10:29
+	android:label
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:7:28-65
+action#android.intent.action.MAIN
+ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:8:17-69
+	android:name
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:8:25-66
+category#android.intent.category.LAUNCHER
+ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:9:17-77
+	android:name
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:9:27-74
+receiver#de.appplant.cordova.plugin.localnotification.TriggerReceiver
+ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:15:9-122
+	android:exported
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:15:19-43
+	android:name
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:15:44-119
+receiver#de.appplant.cordova.plugin.localnotification.ClearReceiver
+ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:16:9-120
+	android:exported
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:16:19-43
+	android:name
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:16:44-117
+activity#de.appplant.cordova.plugin.localnotification.ClickReceiver
+ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:17:9-205
+	android:launchMode
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:17:44-79
+	android:exported
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:17:19-43
+	android:theme
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:17:154-202
+	android:name
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:17:80-153
+service#de.appplant.cordova.plugin.background.ForegroundService
+ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:18:9-91
+	android:name
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:18:18-88
+meta-data#com.facebook.sdk.ApplicationId
+ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:19:9-102
+	android:value
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:19:66-99
+	android:name
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:19:20-65
+meta-data#com.facebook.sdk.ApplicationName
+ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:20:9-106
+	android:value
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:20:68-103
+	android:name
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:20:20-67
+activity#com.facebook.FacebookActivity
+ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:21:9-186
+MERGED from [com.facebook.android:facebook-common:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-common-4.40.0.aar\cf48009795e0593345527fec0beb63a4\AndroidManifest.xml:29:9-32:66
+MERGED from [com.facebook.android:facebook-common:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-common-4.40.0.aar\cf48009795e0593345527fec0beb63a4\AndroidManifest.xml:29:9-32:66
+	android:label
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:21:103-138
+	android:configChanges
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:21:19-102
+	android:theme
+		ADDED from [com.facebook.android:facebook-common:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-common-4.40.0.aar\cf48009795e0593345527fec0beb63a4\AndroidManifest.xml:32:13-63
+	android:name
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:21:139-183
+activity#com.sarriaroman.PhotoViewer.PhotoActivity
+ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:22:9-143
+	android:theme
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:22:76-140
+	android:name
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:22:19-75
+uses-sdk
+ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:27:5-74
+MERGED from [me.leolin:ShortcutBadger:1.1.21] C:\Users\white\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.21.aar\e553283b05237db3987b000855a009cf\AndroidManifest.xml:7:5-9:41
+MERGED from [me.leolin:ShortcutBadger:1.1.21] C:\Users\white\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.21.aar\e553283b05237db3987b000855a009cf\AndroidManifest.xml:7:5-9:41
+MERGED from [com.commit451:PhotoView:1.2.4] C:\Users\white\.gradle\caches\transforms-1\files-1.1\PhotoView-1.2.4.aar\2b320900e3b7ec901af652e5ab8e8ae8\AndroidManifest.xml:8:5-10:41
+MERGED from [com.commit451:PhotoView:1.2.4] C:\Users\white\.gradle\caches\transforms-1\files-1.1\PhotoView-1.2.4.aar\2b320900e3b7ec901af652e5ab8e8ae8\AndroidManifest.xml:8:5-10:41
+MERGED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\07181e2975e36100ffb3f9dd78542e32\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\07181e2975e36100ffb3f9dd78542e32\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-identity:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-identity-11.8.0.aar\8ac2f69ff5494f87b057717c87f07b3a\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-identity:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-identity-11.8.0.aar\8ac2f69ff5494f87b057717c87f07b3a\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-11.8.0.aar\8089b444ac3a3f1ed0272beac449f757\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-11.8.0.aar\8089b444ac3a3f1ed0272beac449f757\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-11.8.0.aar\07eeffb3382ae60a363f1ce8cdc6b423\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-11.8.0.aar\07eeffb3382ae60a363f1ce8cdc6b423\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\50b953f633c0c665b24fbe2e2b2ffd36\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\50b953f633c0c665b24fbe2e2b2ffd36\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\9a6379cad9e2ec91894b9b75aeb0d213\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\9a6379cad9e2ec91894b9b75aeb0d213\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\ec108dc3fea16d065040538f3c9f53a1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\ec108dc3fea16d065040538f3c9f53a1\AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.android:facebook-android-sdk:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.40.0.aar\2b54316bf3fb14710698b40a13bf6863\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-android-sdk:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.40.0.aar\2b54316bf3fb14710698b40a13bf6863\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-login:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-login-4.40.0.aar\3674f8b4b24e9fedfc98e4ae17595615\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-login:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-login-4.40.0.aar\3674f8b4b24e9fedfc98e4ae17595615\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-share:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-share-4.40.0.aar\5c1e192534502b5480f49578b357677e\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-share:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-share-4.40.0.aar\5c1e192534502b5480f49578b357677e\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-common:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-common-4.40.0.aar\cf48009795e0593345527fec0beb63a4\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-common:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-common-4.40.0.aar\cf48009795e0593345527fec0beb63a4\AndroidManifest.xml:24:5-26:41
+MERGED from [com.android.support:support-v4:27.0.2] C:\Users\white\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.2.aar\3c4c6618ae3ba3571956966099dd2b8a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.0.2] C:\Users\white\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.2.aar\3c4c6618ae3ba3571956966099dd2b8a\AndroidManifest.xml:20:5-44
+MERGED from [:CordovaLib] E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\CordovaLib\build\intermediates\manifests\full\debug\AndroidManifest.xml:25:5-44
+MERGED from [:CordovaLib] E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\CordovaLib\build\intermediates\manifests\full\debug\AndroidManifest.xml:25:5-44
+MERGED from [com.google.android.gms:play-services-identity-license:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-identity-license-11.8.0.aar\ec789d8fe61b3f35883e3efc1cae4f77\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-identity-license:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-identity-license-11.8.0.aar\ec789d8fe61b3f35883e3efc1cae4f77\AndroidManifest.xml:4:5-43
+MERGED from [com.facebook.android:facebook-places:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-places-4.40.0.aar\e8ae3ce6a4dcc1cadcfb357462282eef\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-places:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-places-4.40.0.aar\e8ae3ce6a4dcc1cadcfb357462282eef\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-applinks:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-applinks-4.40.0.aar\5978b18d3bbbe160237a94515ee3241d\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-applinks:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-applinks-4.40.0.aar\5978b18d3bbbe160237a94515ee3241d\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-messenger:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-messenger-4.40.0.aar\a5ee53aa953da8730b7ca45dd2c91cfe\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-messenger:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-messenger-4.40.0.aar\a5ee53aa953da8730b7ca45dd2c91cfe\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-marketing:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-marketing-4.40.0.aar\773bf6193878876caeb10d831483b7ff\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-marketing:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-marketing-4.40.0.aar\773bf6193878876caeb10d831483b7ff\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-core:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-core-4.40.0.aar\8c53919faf245ef9d461bcdf5467da12\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-core:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-core-4.40.0.aar\8c53919faf245ef9d461bcdf5467da12\AndroidManifest.xml:24:5-26:41
+MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-license-11.8.0.aar\b7719aee045c0477f07d3101f5442096\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-license-11.8.0.aar\b7719aee045c0477f07d3101f5442096\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-license-11.8.0.aar\926202c891743484a448b9ba454f451a\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-license-11.8.0.aar\926202c891743484a448b9ba454f451a\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\ad4afc7745895b3a049f2226eca90696\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\ad4afc7745895b3a049f2226eca90696\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\8132e24a29648defdd3d6e1e01862af5\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\8132e24a29648defdd3d6e1e01862af5\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\e7c912923f3f256b48843abc51b60415\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\e7c912923f3f256b48843abc51b60415\AndroidManifest.xml:4:5-43
+MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\white\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\2c88fd94001510517cd1c6395fbaf1a3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\white\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\2c88fd94001510517cd1c6395fbaf1a3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\white\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\60cca5d4d611fdb6908d6fe8c655658b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\white\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\60cca5d4d611fdb6908d6fe8c655658b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\white\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\e405c7b3ea9cf55824870f76a244a662\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\white\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\e405c7b3ea9cf55824870f76a244a662\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.0.2] C:\Users\white\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.0.2.aar\3648813320fe4bd169732fa3f752ac82\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.0.2] C:\Users\white\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.0.2.aar\3648813320fe4bd169732fa3f752ac82\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customtabs:27.0.2] C:\Users\white\.gradle\caches\transforms-1\files-1.1\customtabs-27.0.2.aar\dce3a4d96670dc03e1a86cbc0f8598a8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customtabs:27.0.2] C:\Users\white\.gradle\caches\transforms-1\files-1.1\customtabs-27.0.2.aar\dce3a4d96670dc03e1a86cbc0f8598a8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\white\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.2.aar\413a2ac7216119cd2a3dcb47731bdfa1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\white\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.2.aar\413a2ac7216119cd2a3dcb47731bdfa1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\white\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.2.aar\7336a1c7d5399459583a99d92aa938a8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\white\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.2.aar\7336a1c7d5399459583a99d92aa938a8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\white\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\b1e877428b736e35784fad4077a3ddce\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\white\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\b1e877428b736e35784fad4077a3ddce\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\white\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.2.aar\09dfdc0eb97b9fba0effdb76d03b8a85\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\white\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.2.aar\09dfdc0eb97b9fba0effdb76d03b8a85\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] C:\Users\white\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\b424624a37e90b5d7bb7e6e450520fe0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] C:\Users\white\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\b424624a37e90b5d7bb7e6e450520fe0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\white\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\d903e2cf4d3917c888e918a7ec6104d4\AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\white\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\d903e2cf4d3917c888e918a7ec6104d4\AndroidManifest.xml:20:5-22:41
+	android:targetSdkVersion
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:27:42-71
+	android:minSdkVersion
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:27:15-41
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:28:5-81
+	android:name
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:28:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:29:5-79
+	android:name
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:29:22-76
+uses-feature#android.hardware.location.gps
+ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:30:5-66
+	android:name
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:30:19-63
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:31:5-79
+	android:name
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:31:22-76
+uses-permission#android.permission.WAKE_LOCK
+ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:32:5-68
+	android:name
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:32:22-65
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:33:5-71
+	android:name
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:33:22-68
+uses-permission#android.permission.USE_CREDENTIALS
+ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:34:5-74
+	android:name
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:34:22-71
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:35:5-81
+	android:name
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:35:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:36:5-80
+	android:name
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:36:22-77
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:13:13-134
+	android:resource
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:13:75-131
+	android:name
+		ADDED from E:\Pre-pro\blackup\20-14\version2\carpark\platforms\android\app\src\main\AndroidManifest.xml:13:24-74
+uses-permission#com.sec.android.provider.badge.permission.READ
+ADDED from [me.leolin:ShortcutBadger:1.1.21] C:\Users\white\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.21.aar\e553283b05237db3987b000855a009cf\AndroidManifest.xml:19:5-86
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.21] C:\Users\white\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.21.aar\e553283b05237db3987b000855a009cf\AndroidManifest.xml:19:22-83
+uses-permission#com.sec.android.provider.badge.permission.WRITE
+ADDED from [me.leolin:ShortcutBadger:1.1.21] C:\Users\white\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.21.aar\e553283b05237db3987b000855a009cf\AndroidManifest.xml:20:5-87
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.21] C:\Users\white\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.21.aar\e553283b05237db3987b000855a009cf\AndroidManifest.xml:20:22-84
+uses-permission#com.htc.launcher.permission.READ_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.21] C:\Users\white\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.21.aar\e553283b05237db3987b000855a009cf\AndroidManifest.xml:23:5-81
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.21] C:\Users\white\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.21.aar\e553283b05237db3987b000855a009cf\AndroidManifest.xml:23:22-78
+uses-permission#com.htc.launcher.permission.UPDATE_SHORTCUT
+ADDED from [me.leolin:ShortcutBadger:1.1.21] C:\Users\white\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.21.aar\e553283b05237db3987b000855a009cf\AndroidManifest.xml:24:5-83
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.21] C:\Users\white\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.21.aar\e553283b05237db3987b000855a009cf\AndroidManifest.xml:24:22-80
+uses-permission#com.sonyericsson.home.permission.BROADCAST_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.21] C:\Users\white\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.21.aar\e553283b05237db3987b000855a009cf\AndroidManifest.xml:27:5-88
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.21] C:\Users\white\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.21.aar\e553283b05237db3987b000855a009cf\AndroidManifest.xml:27:22-85
+uses-permission#com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.21] C:\Users\white\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.21.aar\e553283b05237db3987b000855a009cf\AndroidManifest.xml:28:5-92
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.21] C:\Users\white\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.21.aar\e553283b05237db3987b000855a009cf\AndroidManifest.xml:28:22-89
+uses-permission#com.anddoes.launcher.permission.UPDATE_COUNT
+ADDED from [me.leolin:ShortcutBadger:1.1.21] C:\Users\white\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.21.aar\e553283b05237db3987b000855a009cf\AndroidManifest.xml:31:5-84
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.21] C:\Users\white\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.21.aar\e553283b05237db3987b000855a009cf\AndroidManifest.xml:31:22-81
+uses-permission#com.majeur.launcher.permission.UPDATE_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.21] C:\Users\white\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.21.aar\e553283b05237db3987b000855a009cf\AndroidManifest.xml:34:5-83
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.21] C:\Users\white\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.21.aar\e553283b05237db3987b000855a009cf\AndroidManifest.xml:34:22-80
+uses-permission#com.huawei.android.launcher.permission.CHANGE_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.21] C:\Users\white\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.21.aar\e553283b05237db3987b000855a009cf\AndroidManifest.xml:37:5-91
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.21] C:\Users\white\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.21.aar\e553283b05237db3987b000855a009cf\AndroidManifest.xml:37:22-88
+uses-permission#com.huawei.android.launcher.permission.READ_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.21] C:\Users\white\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.21.aar\e553283b05237db3987b000855a009cf\AndroidManifest.xml:38:5-92
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.21] C:\Users\white\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.21.aar\e553283b05237db3987b000855a009cf\AndroidManifest.xml:38:22-89
+uses-permission#com.huawei.android.launcher.permission.WRITE_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.21] C:\Users\white\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.21.aar\e553283b05237db3987b000855a009cf\AndroidManifest.xml:39:5-93
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.21] C:\Users\white\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.21.aar\e553283b05237db3987b000855a009cf\AndroidManifest.xml:39:22-90
+uses-permission#android.permission.READ_APP_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.21] C:\Users\white\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.21.aar\e553283b05237db3987b000855a009cf\AndroidManifest.xml:42:5-73
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.21] C:\Users\white\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.21.aar\e553283b05237db3987b000855a009cf\AndroidManifest.xml:42:22-70
+uses-permission#com.oppo.launcher.permission.READ_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.21] C:\Users\white\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.21.aar\e553283b05237db3987b000855a009cf\AndroidManifest.xml:45:5-82
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.21] C:\Users\white\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.21.aar\e553283b05237db3987b000855a009cf\AndroidManifest.xml:45:22-79
+uses-permission#com.oppo.launcher.permission.WRITE_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.21] C:\Users\white\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.21.aar\e553283b05237db3987b000855a009cf\AndroidManifest.xml:46:5-83
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.21] C:\Users\white\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.21.aar\e553283b05237db3987b000855a009cf\AndroidManifest.xml:46:22-80
+uses-permission#me.everything.badger.permission.BADGE_COUNT_READ
+ADDED from [me.leolin:ShortcutBadger:1.1.21] C:\Users\white\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.21.aar\e553283b05237db3987b000855a009cf\AndroidManifest.xml:49:5-88
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.21] C:\Users\white\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.21.aar\e553283b05237db3987b000855a009cf\AndroidManifest.xml:49:22-85
+uses-permission#me.everything.badger.permission.BADGE_COUNT_WRITE
+ADDED from [me.leolin:ShortcutBadger:1.1.21] C:\Users\white\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.21.aar\e553283b05237db3987b000855a009cf\AndroidManifest.xml:50:5-89
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.21] C:\Users\white\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.21.aar\e553283b05237db3987b000855a009cf\AndroidManifest.xml:50:22-86
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\07181e2975e36100ffb3f9dd78542e32\AndroidManifest.xml:23:9-27:75
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\07181e2975e36100ffb3f9dd78542e32\AndroidManifest.xml:25:13-46
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\07181e2975e36100ffb3f9dd78542e32\AndroidManifest.xml:26:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\07181e2975e36100ffb3f9dd78542e32\AndroidManifest.xml:27:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\07181e2975e36100ffb3f9dd78542e32\AndroidManifest.xml:24:13-93
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\07181e2975e36100ffb3f9dd78542e32\AndroidManifest.xml:33:9-36:110
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\07181e2975e36100ffb3f9dd78542e32\AndroidManifest.xml:35:13-36
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\07181e2975e36100ffb3f9dd78542e32\AndroidManifest.xml:36:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\07181e2975e36100ffb3f9dd78542e32\AndroidManifest.xml:34:13-89
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\50b953f633c0c665b24fbe2e2b2ffd36\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\50b953f633c0c665b24fbe2e2b2ffd36\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\50b953f633c0c665b24fbe2e2b2ffd36\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\50b953f633c0c665b24fbe2e2b2ffd36\AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\ec108dc3fea16d065040538f3c9f53a1\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\ec108dc3fea16d065040538f3c9f53a1\AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\ec108dc3fea16d065040538f3c9f53a1\AndroidManifest.xml:24:13-58
+activity#com.facebook.CustomTabMainActivity
+ADDED from [com.facebook.android:facebook-common:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-common-4.40.0.aar\cf48009795e0593345527fec0beb63a4\AndroidManifest.xml:33:9-71
+	android:name
+		ADDED from [com.facebook.android:facebook-common:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-common-4.40.0.aar\cf48009795e0593345527fec0beb63a4\AndroidManifest.xml:33:19-68
+activity#com.facebook.CustomTabActivity
+ADDED from [com.facebook.android:facebook-common:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-common-4.40.0.aar\cf48009795e0593345527fec0beb63a4\AndroidManifest.xml:34:9-67
+	android:name
+		ADDED from [com.facebook.android:facebook-common:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-common-4.40.0.aar\cf48009795e0593345527fec0beb63a4\AndroidManifest.xml:34:19-64
+provider#com.facebook.marketing.internal.MarketingInitProvider
+ADDED from [com.facebook.android:facebook-marketing:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-marketing-4.40.0.aar\773bf6193878876caeb10d831483b7ff\AndroidManifest.xml:29:9-32:40
+	android:authorities
+		ADDED from [com.facebook.android:facebook-marketing:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-marketing-4.40.0.aar\773bf6193878876caeb10d831483b7ff\AndroidManifest.xml:31:13-73
+	android:exported
+		ADDED from [com.facebook.android:facebook-marketing:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-marketing-4.40.0.aar\773bf6193878876caeb10d831483b7ff\AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.facebook.android:facebook-marketing:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-marketing-4.40.0.aar\773bf6193878876caeb10d831483b7ff\AndroidManifest.xml:30:13-81
+provider#com.facebook.internal.FacebookInitProvider
+ADDED from [com.facebook.android:facebook-core:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-core-4.40.0.aar\8c53919faf245ef9d461bcdf5467da12\AndroidManifest.xml:39:9-42:40
+	android:authorities
+		ADDED from [com.facebook.android:facebook-core:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-core-4.40.0.aar\8c53919faf245ef9d461bcdf5467da12\AndroidManifest.xml:41:13-72
+	android:exported
+		ADDED from [com.facebook.android:facebook-core:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-core-4.40.0.aar\8c53919faf245ef9d461bcdf5467da12\AndroidManifest.xml:42:13-37
+	android:name
+		ADDED from [com.facebook.android:facebook-core:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-core-4.40.0.aar\8c53919faf245ef9d461bcdf5467da12\AndroidManifest.xml:40:13-70
+receiver#com.facebook.CurrentAccessTokenExpirationBroadcastReceiver
+ADDED from [com.facebook.android:facebook-core:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-core-4.40.0.aar\8c53919faf245ef9d461bcdf5467da12\AndroidManifest.xml:44:9-50:20
+	android:exported
+		ADDED from [com.facebook.android:facebook-core:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-core-4.40.0.aar\8c53919faf245ef9d461bcdf5467da12\AndroidManifest.xml:46:13-37
+	android:name
+		ADDED from [com.facebook.android:facebook-core:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-core-4.40.0.aar\8c53919faf245ef9d461bcdf5467da12\AndroidManifest.xml:45:13-86
+intent-filter#com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
+ADDED from [com.facebook.android:facebook-core:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-core-4.40.0.aar\8c53919faf245ef9d461bcdf5467da12\AndroidManifest.xml:47:13-49:29
+action#com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
+ADDED from [com.facebook.android:facebook-core:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-core-4.40.0.aar\8c53919faf245ef9d461bcdf5467da12\AndroidManifest.xml:48:17-95
+	android:name
+		ADDED from [com.facebook.android:facebook-core:4.40.0] C:\Users\white\.gradle\caches\transforms-1\files-1.1\facebook-core-4.40.0.aar\8c53919faf245ef9d461bcdf5467da12\AndroidManifest.xml:48:25-92

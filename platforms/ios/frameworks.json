@@ -1,0 +1,16 @@
+{
+    "libz.tbd": 3,
+    "ImageIO.framework": 1,
+    "CoreLocation.framework": 4,
+    "AVFoundation.framework": 1,
+    "AudioToolbox.framework": 1,
+    "AddressBook.framework": 1,
+    "CoreText.framework": 1,
+    "SafariServices.framework": 1,
+    "Security.framework": 1,
+    "SystemConfiguration.framework": 2,
+    "libz.dylib": 2,
+    "WebKit.framework": 1,
+    "UserNotifications.framework": 1,
+    "MapKit.framework": 1
+}
